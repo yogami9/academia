@@ -165,15 +165,34 @@ main {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    /* Styles for large screens like tablets and small laptops */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.15rem;
+    }
+
+    .testimonials {
+        flex-direction: row;
+    }
+
+    .testimonial-item {
+        width: 30%; /* Adjust width as needed */
+    }
+}
+
+@media (max-width: 992px) {
+    /* Styles for medium-sized devices like tablets in landscape orientation */
     nav ul {
         text-align: center;
-        padding: 0;
     }
 
     nav ul li {
-        display: block;
-        margin: 0;
+        display: inline-block;
+        margin: 0 5px;
     }
 
     .hero h1 {
@@ -186,6 +205,73 @@ main {
 
     .testimonials {
         flex-direction: column;
+    }
+
+    .testimonial-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Styles for mobile devices */
+    header {
+        padding: 0.5rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        margin: 0.5rem 0;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Styles for extra small devices like very small phones */
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .social-icon {
+        width: 30px; /* Smaller icons */
+        height: 30px;
+    }
+
+    .social-icon img {
+        width: 20px; /* Smaller images */
+        height: 20px;
     }
 }
 
@@ -328,9 +414,6 @@ main {
     background-color: #cc5200;
 }
 
-
-
-
 .slider {
     position: relative;
     width: 100vw;
@@ -366,8 +449,6 @@ h1 {
     margin: 0;
 }
 
-
-
 /* About Preview Section */
 .about-preview {
     padding: 2rem;
@@ -399,7 +480,7 @@ h1 {
 }
 
 .about-preview .btn:hover {
-    background-color: #f04f4f;
+    background-color: #d43f3a; /* Updated for hover effect */
 }
 
 .faq-preview {
@@ -457,6 +538,5 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #f04f4f;
+    background-color: #d43f3a; /* Updated for hover effect */
 }
-
